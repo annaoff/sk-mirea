@@ -1,2 +1,2 @@
 # sk-mirea
-developer: Anna
+developer: Anna Ovodova
