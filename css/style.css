@@ -66,7 +66,16 @@ input {
 }
 /* ----- HEADER -----  */
 .navbar-toggler {
-  border: 1px solid var(--heading) !important;
+  border: none !important;
+}
+.badge-bg {
+  background-color: var(--btn-hover);
+  border-radius: 50% !important;
+  color: var(--btn-text);
+  font-weight: 400 !important;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 2px 6px;
 }
 .btn-blue-link {
   background-color: var(--heading);
@@ -135,6 +144,7 @@ input {
   height: calc(100vh - 72px);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
 }
 .main-page__wrapper {
   padding-top: 120px;
@@ -153,8 +163,10 @@ input {
   color: var(--text);
 }
 .btn-item {
-  width: 181px;
-  height: 46px;
+  width: max-content;
+  max-width: 200px;
+  min-height: 46px;
+  display: inline-block;
   border-radius: 30px;
   background-color: var(--btn);
   color: var(--btn-text);
@@ -175,7 +187,7 @@ input {
   content: "";
   background-image: url(../img/triangle.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 15px;
   height: 22px;
   position: absolute;
@@ -185,17 +197,18 @@ input {
   transform: translateY(-50%);
 }
 .btn-item:hover {
-  background-color: var(--btn-hover);
+  /* background-color: var(--btn-hover); */
   color: var(--btn-text);
 }
-.btn-item:focus,
+/* .btn-item:focus,
 .btn-item:active {
   background-color: var(--btn);
-}
+} */
+.btn-item:hover::after,
 .btn-item:focus::after,
 .btn-item:active::after {
   background-image: url(../img/triangle-full.svg);
-  background-size: 100%;
+  background-size: cover;
 }
 
 /* ----- Преимущества -----  */
@@ -288,18 +301,26 @@ input {
 }
 .card__item {
   width: 335px;
+  height: 100%;
+  max-width: max-content;
   filter: drop-shadow(0px 16px 32px rgba(34, 102, 156, 0.06))
     drop-shadow(0px 8px 24px rgba(34, 102, 156, 0.06))
     drop-shadow(0px 2px 8px rgba(34, 102, 156, 0.06))
     drop-shadow(0px 0px 1px rgba(34, 102, 156, 0.06));
 }
+
 .card__item-body {
   margin-bottom: 40px;
 }
 .card__item-body h5 {
   font-size: 24px;
   line-height: 30px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
+  min-height: 80px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   padding-bottom: 20px;
   border-bottom: 3px solid var(--heading);
 }
@@ -334,7 +355,7 @@ input {
   display: flex;
   padding-left: 80px !important;
   justify-content: center;
-  min-width: 350px;
+  min-width: 330px;
 }
 .list-benefits__item::before {
   content: "";
@@ -437,8 +458,12 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 295px;
-  height: 250px;
+  min-width: 162px;
+  max-width: 295px;
+  min-height: 138px;
+  height: 100%;
+  max-height: 250px;
+  padding: 20px;
   background-color: var(--btn-text);
   filter: drop-shadow(0px 16px 32px rgba(34, 102, 156, 0.06))
     drop-shadow(0px 8px 24px rgba(34, 102, 156, 0.06))
@@ -468,6 +493,9 @@ input {
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: center;
+  min-height: 225px;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
@@ -508,8 +536,12 @@ button.btn-item:active {
     url(../img/MIREA.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: var(--btn-text);
   margin-bottom: 72px;
+}
+.contacts__social a {
+  text-decoration: none;
 }
 .marker {
   width: 16px;
@@ -527,6 +559,9 @@ button.btn-item:active {
   text-decoration: none;
   margin-bottom: 10px;
   display: block;
+}
+.contacts__tel a:hover {
+  color: var(--btn-text);
 }
 .contacts__desc {
   font-weight: 400;
@@ -593,4 +628,32 @@ button.btn-item:active {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .main-page__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .main-page__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partners__item {
+    width: 162px;
+    height: 138px;
+  }
+  .img-feedback {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card__item {
+    width: 100%;
+  }
+  .card-title {
+    font-size: 1.25rem;
+  }
+  /* .img-feedback {
+    position: relative;
+  } */
 }

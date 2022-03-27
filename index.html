@@ -28,7 +28,7 @@
     <header>
       <nav class="navbar  navbar-expand-lg fixed-top navbar-light">
         <div class="container">
-          <a class="navbar-brand col-xs-12 col-md-8 col-lg-4  d-flex align-items-center" href="#">
+          <a class="navbar-brand col-xs-12 col-md-8 col-lg-3  d-flex align-items-center" href="#">
               <img src="img/logo-mirea.svg" width='41' height='46' alt="Logo">
               <span class="navbar-brand__desc d-none d-sm-block px-2 px-xs-2 px-lg-4 fs-4 text-wrap">Спорткомплексы РТУ МИРЭА</span>
           </a>
@@ -44,7 +44,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-baseline">
               <li class="nav-item mx-3">
                 <a class="nav-link active" aria-current="page" href="#">Спортивные услуги</a>
               </li>
@@ -53,6 +53,10 @@
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="#">Абонементы</a>
+              </li>
+              <li class="nav-item mx-3 d-flex align-items-center">
+                <a class="nav-link" href="#">Бэкофис</a>
+                <span class="badge badge-bg mx-1 ">4</span>
               </li>
               <li class="nav-item ms-3">
                 <a class="nav-link" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</a>
@@ -75,12 +79,12 @@
             <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Логин</label>
-                  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                   <div id="emailHelp" class="form-text"></div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" required>
                 </div>
                 <div class="mb-3  ">
                     <a href="" class="passport-link">Восстановить пароль</a>
@@ -100,12 +104,17 @@
   <section class=" main-page page-item col-12">
     <h1 class="visually-hidden">Услуги спорткомплексов </h1>
     <div class="container"> 
-      <div class="main-page__wrapper col-xs-12 col-xl-4">
-        <h2 class="main-page__title pb-4">Спорткомплексы РТУ МИРЭА </h2>
-        <p  class="main-page__text mb-2">Помогаем проводить спортивные мероприятия</p>
-        <p class="main-page__text pb-4">Сотрудничаем с ИП, юридическими   и физическими лицами по договору</p>
-        <a href="" class="btn-item">Выбрать услугу</a>
+      <div class="row">
+        <div class="col">
+          <div class="main-page__wrapper col-xs-12 col-xl-4">
+            <h2 class="main-page__title pb-4 fs-xs-5">Спорткомплексы РТУ МИРЭА </h2>
+            <p  class="main-page__text mb-2 fs-5">Помогаем проводить спортивные мероприятия</p>
+            <p class="main-page__text pb-4 fs-5">Сотрудничаем с ИП, юридическими   и физическими лицами по договору</p>
+            <a href="" class="btn-item">Выбрать услугу</a>
+          </div>
+        </div>
       </div>
+      
      
     </div>
   </section>
@@ -113,7 +122,8 @@
     <h2 class="visually-hidden ">Преимущества</h2>
     <div class="container ">
       <div class="row ">
-      <div class="col  mb-3 me-md-2 benefits-item benefits-1  position-relative">
+      <div class="col-12 col-lg-4">
+        <div class="mb-3 me-md-2 benefits-item benefits-1  position-relative">
         <div class="benefits-line benefits-line__top">
         <div class="benefits-line__item"></div>
         </div>
@@ -127,7 +137,9 @@
           <div class="benefits-line__item"></div>
         </div>
       </div>
-      <div class="col  mx-lg-3  mb-3 benefits-item benefits-2  position-relative">
+      </div>
+      <div class="col-12 col-lg-4  ">
+        <div class="mx-lg-3  mb-3 benefits-item benefits-2  position-relative">
         <div class="benefits-line benefits-line__top">
         <div class="benefits-line__item"></div>
         </div>
@@ -141,7 +153,9 @@
           <div class="benefits-line__item"></div>
         </div>
       </div>
-        <div class="col  mb-3   benefits-item benefits-3  position-relative">
+    </div>
+        <div class="col-12 col-lg-4 ">
+          <div class=" mb-3   benefits-item benefits-3  position-relative"> 
         <div class="benefits-line benefits-line__top">
         <div class="benefits-line__item"></div>
         </div>
@@ -156,6 +170,7 @@
         </div>
       </div>
     </div>
+  </div>
     </div>
   </section>
   
@@ -163,9 +178,9 @@
   <section class='card-services block-wrapper'>
   <h2 class="visually-hidden ">Выбор площадок</h2>
   <div class="container">
-    <div class="row g-3 justify-content-center justify-content-lg-between">
-      <div class="col">
-        <div class="  card border-0 p-0   ms-auto me-auto ms-xl-0 me-xl-auto  card__item"    >
+    <div class="row g-3 justify-content-center justify-content-lg-between align-items-stretch">
+      <div class="col-12 col-lg-4 ">
+        <div class=" card border-0  card__item  flex-column flex-md-row flex-lg-column ms-xl-0 me-xl-auto" >
           <img src="img/igrovoi_zal.png" class="card-img-top " alt="Игровой спортивный зал фото">
           <div class="card-body card__item-body px-4 text-center">
             <h5 class="card-title fw-bold ">Спортивные услуги </h5>
@@ -174,8 +189,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="  card border-0 p-0   mx-auto card__item"  >
+      <div class="col-12 col-lg-4">
+        <div class="  card border-0 p-0   mx-lg-auto card__item flex-column flex-md-row flex-lg-column  "  >
           <img src="img/stadion.png" class="card-img-top " alt="Стадион фото">
           <div class="card-body  card__item-body px-4 text-center">
             <h5 class="card-title fw-bold ">Организация мероприятий </h5>
@@ -184,8 +199,8 @@
           </div>
         </div>
       </div>
-    <div class="col">
-      <div class="  card border-0 p-0  ms-auto me-auto ms-xl-auto me-xl-0 card__item" >
+    <div class="col-12 col-lg-4">
+      <div class="  card border-0 p-0   ms-xl-auto me-xl-0 card__item flex-column flex-md-row flex-lg-column" >
         <img src="img/univer_zal.png" class="card-img-top " alt="Стадион фото">
         <div class="card-body  card__item-body px-4 text-center">
           <h5 class="card-title fw-bold ">Абонемент </h5>
@@ -253,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col d-none d-xl-block">
           <div class="card border-0 news-card   ms-auto me-auto ms-xl-auto me-xl-0" >
             <div class="card-body">
               <p class="card-text">Заголовок новости Заголовок новости Заголовок новости Заголовок новости Заголовок </p>
@@ -276,28 +291,28 @@
   <section class="partners block-wrapper">
       <div class="container">
         <h3 class="text-center">Нам доверяют</h3>
-        <div class="row g-3 partners-block align-items-center">
-          <div class="col ">
+        <div class="row g-3 partners-block align-items-stretch">
+          <div class="col-6 col-lg-3 ">
             <div class="partners__item m-auto">
-              <img src="img/liga-icon.png"  width="164" height="211" alt="Лига чемпионов бизнеса лого">
+              <img src="img/liga-icon.png"  width="50%" height="80%" alt="Лига чемпионов бизнеса лого">
             </div>
             
           </div>
-          <div class="col">
+          <div class="col-6 col-lg-3 ">
             <div class="partners__item m-auto">
-              <img src="img/gasprom.png"    width="286" height="114" alt="Лига чемпионов бизнеса лого">
+              <img src="img/gasprom.png"  width="80%" height="50%"  alt="Лига чемпионов бизнеса лого">
             </div>
             
           </div>
-          <div class="col">
+          <div class="col-6 col-lg-3 ">
             <div class="partners__item m-auto">
-              <img src="img/PC-icon.png"    width="258" height="88" alt="Лига чемпионов бизнеса лого">
+              <img src="img/PC-icon.png"  width="80%" height="50%"  alt="Лига чемпионов бизнеса лого">
             </div>
          
           </div>
-          <div class="col">
+          <div class="col-6 col-lg-3 ">
             <div class="partners__item m-auto">
-              <img src="img/FSO-icon.png"     width="210" height="182" alt="Лига чемпионов бизнеса лого">
+              <img src="img/FSO-icon.png"  width="70%" height="80%"   alt="Лига чемпионов бизнеса лого">
             </div>
             
           </div>
@@ -308,24 +323,25 @@
     <h2 class="visually-hidden">Обратная связь</h2>
     <div class="container ">
       <div class="row">
-         <div class="col-12 col-lg-5 feedback-wrapper">
+         <div class="col-12 col-md-5  order-1 order-lg-0 feedback-wrapper">
            <h3 class="feedback-title text-center mb-4">Есть вопросы? Мы с вами свяжемся</h3>
           <form class="mb-4">
             <div class="mb-3">
               <label class="visually-hidden" for="autoSizingInput">Name</label>
-              <input type="text" class="form-control" id="autoSizingInput" placeholder="Имя">
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Имя" required>
             </div>
             <div class="mb-3">
               <label class="visually-hidden" for="phone-number"  >phone-number</label>
               <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Телефон">
+                <input type="text" class="form-control item" id="phone-number" placeholder="Телефон" required>
             </div>
             </div>
              <p class="feedback-desc">Нажимая «Отправить», я даю согласие на обработку моих персональных данных, в соответствии с <span>Политикой конфеденциальности*</span> </p>
             <button type="submit" class="btn-item m-auto d-block">Отправить</button>
           </form>
          </div>
-         <div class="d-none d-lg-block col-lg-6 pe-0 img-feedback"> </div>
+         <div class=" col-12 col-md-6 pe-0  img-feedback">
+            </div>
       </div>
       
     </div>
@@ -334,8 +350,8 @@
   <section class="contacts block-wrapper">
     <h2 class="visually-hidden"> Контакты</h2>
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <div class="row gx-3 gy-5">
+          <div class="col-12 col-lg-4">
             <div class="contacts-item text-center">
               <div class="marker mx-auto"></div>
               <p class="contacts__title">Спорткомплекс <br>
@@ -353,7 +369,7 @@
                 </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-4">
             <div class="contacts-item text-center">
               <div class="marker mx-auto"></div>
               <p class="contacts__title">Спорткомплекс <br>
@@ -371,7 +387,7 @@
                 </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-4">
             <div class="contacts-item text-center">
               <div class="marker mx-auto"></div>
               <p class="contacts__title">Спорткомплекс <br>
@@ -404,7 +420,7 @@
  
     <div class="container">
       <div class="row">
-        <ul class="nav justify-content-between footer-nav">
+        <ul class="nav justify-content-between footer-nav flex-column flex-lg-row">
           <li class="nav-item me-1">
             <a class="nav-link "  href="#">Документы и правила посещения</a>
           </li>
@@ -422,10 +438,10 @@
           </li>
         </ul>
       </div>
-      <div class="row">
-        <div class="col-6"> <p class="footer-title">МИРЭА — Российский технологический университет</p></div>
-         <div class="col-6"><a href="https://www.mirea.ru/" target="_blank
-          " class="footer-link text-end d-block"> mirea.ru</a></div>
+      <div class="row  flex-column flex-lg-row">
+        <div class="col-12 col-lg-6"> <p class="footer-title">МИРЭА — Российский технологический университет</p></div>
+         <div class="col-12 col-lg-6"><a href="https://www.mirea.ru/" target="_blank
+          " class="footer-link text-start text-lg-end d-block"> mirea.ru</a></div>
       </div>
     </div>
   </div>
