@@ -9,6 +9,9 @@ body {
   justify-content: space-between;
   min-height: 100vh;
 }
+.main-wrapper {
+  min-height: 79vh;
+}
 @font-face {
   font-family: "PT Sans" 0;
   src: url(../fonts/PTSans-Regular.ttf) format("ttf");
@@ -51,15 +54,24 @@ body {
 }
 .main-wrapper {
   padding-top: 72px;
+  padding-bottom: 72px;
 }
 a {
   list-style-type: none;
   text-decoration: none;
 }
-input {
+input,
+.form-select {
   border: 1px solid var(--heading) !important;
   border-radius: 30px !important;
 }
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/");
+}
+
 .block-wrapper {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -164,7 +176,7 @@ input {
 }
 .btn-item {
   width: max-content;
-  max-width: 200px;
+  /* max-width: 200px; */
   min-height: 46px;
   display: inline-block;
   border-radius: 30px;
@@ -300,7 +312,9 @@ input {
   background-color: var(--btn-text);
 }
 .card__item {
-  width: 335px;
+  min-width: 300px;
+  width: 80%;
+  max-width: 335px;
   height: 100%;
   max-width: max-content;
   filter: drop-shadow(0px 16px 32px rgba(34, 102, 156, 0.06))
@@ -439,7 +453,6 @@ input {
   font-size: 16px;
   line-height: 22px;
   width: max-content;
-  margin: auto;
   transition: ease 0.3s;
 }
 .btn-grey-link:hover {
@@ -536,9 +549,8 @@ button.btn-item:active {
     url(../img/MIREA.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 23%;
   color: var(--btn-text);
-  margin-bottom: 72px;
 }
 .contacts__social a {
   text-decoration: none;
@@ -595,7 +607,7 @@ button.btn-item:active {
 .footer-line__item::after {
   content: "";
   height: 2px;
-  width: 48%;
+  width: 46.5%;
   background-color: var(--heading);
   display: block;
   position: absolute;
@@ -645,6 +657,9 @@ button.btn-item:active {
   .img-feedback {
     position: relative;
   }
+  .navbar-brand__desc {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .card__item {
@@ -653,4 +668,92 @@ button.btn-item:active {
   .card-title {
     font-size: 1.25rem;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* стили */
+}
+
+/* -----------SportServices Page ------------*/
+.sport-services__title {
+  margin-top: 72px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--heading);
+}
+.sport-services__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+  color: var(--text);
+}
+
+.sports-services__cards .card-body {
+  background-color: var(--bg-grey);
+}
+.sports-services__cards .card {
+  background-color: var(--bg-grey);
+}
+.sport-select-group {
+  margin-bottom: 40px;
+}
+
+/* -----------Документы и правила посещения ------------*/
+
+.documents li {
+  box-shadow: 0px 16px 32px rgba(34, 102, 156, 0.06),
+    0px 8px 24px rgba(34, 102, 156, 0.06), 0px 2px 8px rgba(34, 102, 156, 0.06),
+    0px 0px 1px rgba(34, 102, 156, 0.06);
+  background-color: var(--bg-grey);
+  padding: 20px;
+}
+.documents__list a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* -----------Парковка ------------*/
+.parking .card {
+  background-color: var(--bg-grey);
+  padding: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+.parking p.card-text,
+.parking h5.card-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* -----------Feedback-send ------------*/
+.feedback-page__wrapper {
+  background-color: var(--bg-grey);
+  padding: 30px 5px;
+  margin-bottom: 80px;
+}
+.t-fs-30 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.feedback__form-area {
+  padding: 0 20px;
+}
+.feedback__form-area textarea {
+  border: 1px solid var(--heading);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.feddback__person-form {
+  padding: 0 20px;
 }

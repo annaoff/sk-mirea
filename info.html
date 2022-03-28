@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <!-- Fonts  PT+Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnesct" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>sk.mirea.ru</title>
+  </head>
+  <body>
+     
+    <header>
+      <nav class="navbar  navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+          <a class="navbar-brand col-xs-12 col-md-8 col-lg-4 col-xl-4  d-flex align-items-center" href="#">
+              <img src="img/logo-mirea.svg" width='41' height='46' alt="Logo">
+              <span class="navbar-brand__desc  px-2 px-xs-2 px-lg-4   text-wrap">Спорткомплексы РТУ МИРЭА</span>
+          </a>
+          <div>
+            <span class="badge badge-bg mx-1 d-lg-none ">4</span>
+            <button
+            class="navbar-toggler   "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          > 
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-baseline flex-wrap">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="#">Спортивные услуги</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Организация мероприятий</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Абонементы</a>
+              </li>
+              <li class="nav-item mx-3 d-flex align-items-center">
+                <a class="nav-link" href="#">Бэкофис</a>
+                <span class="badge badge-bg mx-1 ">4</span>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#enterModal">Войти</a>
+              </li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="enterModal" tabindex="-1" aria-labelledby="enterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto" id="enterModalLabel">Авторизация</h5>
+          <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Логин</label>
+                  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3  ">
+                    <a href="" class="passport-link">Восстановить пароль</a>
+                </div>
+                 
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-blue-link ">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </header>
+    
+<div class="main-wrapper">
+    <div class="container">
+        <div class="row">
+            <ul class="list-group list-group-horizontal ">
+                <li class="list-group-item active gx-3 border-0" aria-current="true">Документы и правила посещения</li>
+                <li class="list-group-item gx-3 border-0">Парковка</li>
+                <li class="list-group-item">Обратная свзязь</li>
+                <li class="list-group-item">Политика конфиденциальности</li>
+                <li class="list-group-item">Порядок оказания услуг и оплаты</li>
+              </ul>
+        </div>
+
+        <section class="documents">
+          <ul class="list-group documents__list ">
+            <li class="list-group-item  border-0 mb-5" aria-current="true">
+              <a href="" download> <img src="img/download.svg" alt="скачать" class="me-2"></a>
+              <a href="" target="_blank"> Положение об оказании платных физкультурно-оздоровительных и спортивных услуг
+                </a>
+            </li>
+            <li class="list-group-item  border-0 mb-5" aria-current="true">
+              <a href="" download> <img src="img/download.svg" alt="скачать" class="me-2"></a>
+              <a href="" target="_blank">Правила посещения
+                </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="parking">
+           
+            <div class="card">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
+                  на Пр. Вернадского, 78 стр. 5 </h5>
+                <p class="card-text">Метро Юго-Западная</p>
+                <p class="card-text">Парковка на внутренней территории</p>
+                <div>
+                  <p class="card-text mb-1">Как оформить:</p>
+                  <ul>
+                    <li>При оформлении услуги сообщите менеджеру номер и марку автомобиля</li>
+                    <li>В день посещения на КПП пропустят вашу машину</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="card-text mb-1">Как проехать:</p>
+                  <ul>
+                    <li>Въезд на парковку расположен на улице Коштоянца со строны проспекта Вернадского через КПП №1</li>
+                  </ul>
+                </div>
+               <div>
+                <p class="card-text mb-1">Стоимость:</p>
+                <ul>
+                  <li>Бесплатно</li>
+                </ul>
+               </div>
+                
+                <a href="#" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
+                  на Пр. Вернадского, 86 стр. 9 </h5>
+                <p class="card-text">Метро Юго-Западная</p>
+                <p class="card-text">Парковка на внутренней территории</p>
+                <div>
+                  <p class="card-text mb-1">Как оформить:</p>
+                  <ul>
+                    <li>При оформлении услуги сообщите менеджеру номер и марку автомобиля</li>
+                    <li>В день посещения на КПП пропустят вашу машину</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="card-text mb-1">Как проехать:</p>
+                  <ul>
+                    <li>Въезд на парковку расположен в проезде между улицей Рузкая и улицей Академика Анохина через КПП №2 справа от дома по адресу Проспект Вернадского, 86 с. 1</li>
+                  </ul>
+                </div>
+               <div>
+                <p class="card-text mb-1">Стоимость:</p>
+                <ul>
+                  <li>Бесплатно</li>
+                </ul>
+               </div>
+                
+                <a href="#" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
+                  на Ул. Стромынка, 20 к. 1</h5>
+                <p class="card-text">Метро Сокольники</p>
+                <p class="card-text">Городская парковка</p>
+                <div>
+                  <p class="card-text mb-1">Как проехать:</p>
+                  <ul>
+                    <li>Подъезд к спорткомплексу осуществляется с улицы Матросская Тишина по трамвайным путям. </li>
+                  </ul>
+                </div>
+               <div>
+                <p class="card-text mb-1">Стоимость:</p>
+                <ul>
+                  <li>0-40 рублей в час</li>
+                </ul>
+               </div>
+                
+                <a href="#" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+              </div>
+            </div>
+            
+        </section>
+
+        <section class="feedback-page">
+        <div class="feedback-page__wrapper">
+          <div class="feedback__form">
+            <h5 class="text-center mb-3 t-fs-30">Отправить вопрос или отзыв</h5>
+            <div class="feedback__form-area mb-3">
+              <label for="feedbackText" class="form-label mb-1">Название</label>
+              <textarea class="form-control" id="feedbackText" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="getFeedback">
+            <label class="form-check-label" for="getFeedback">
+              Получить обратную связь
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="anonim" checked>
+            <label class="form-check-label" for="anonim">
+              Анонимно
+            </label>
+          </div>
+
+          <form class="mb-4 feddback__person-form">
+            <div class="mb-3">
+              <label class="visually-hidden" for="autoSizingInput">Name</label>
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Имя" required>
+            </div>
+            <div class="mb-3">
+              <label class="visually-hidden" for="phone-number"  >phone-number</label>
+              <div class="form-group">
+                <input type="text" class="form-control item" id="phone-number" placeholder="Телефон" required>
+            </div>
+            </div>
+             <p class="feedback-desc">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в  <span>Политикой конфеденциальности*</span> </p>
+            
+          </form>
+          <button type="submit" class="btn-item m-auto d-block">Отправить</button>
+        </div>
+
+        <div class="question-block">
+          <h5 class="text-center mb-3 t-fs-30">Часто задаваемые вопросы</h5>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item my-5">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Можно ли курить на территории спорткомплекса?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   Нет, курение в помещениях на территории спорткомплека запрещено.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Можно ли курить на территории спорткомплекса?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Нет, курение в помещениях на территории спорткомплека запрещено.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        
+    </div>
+</div>
+
+<footer>
+  <div class="footer-wrap position-relative">
+        <div class="footer-line">
+          <div class="footer-line__item"></div>
+          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="nav justify-content-between footer-nav flex-column flex-lg-row">
+            <li class="nav-item me-1">
+              <a class="nav-link ps-lg-0 "  href="#">Документы и правила посещения</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#">Парковка</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#">Обратная связь</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link pe-0" href="#">Порядок оказания услуг и оплаты </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row  flex-column flex-lg-row">
+        <div class="col-12 col-lg-6">
+           <p class="footer-title px-3 px-lg-0">МИРЭА — Российский технологический университет</p></div>
+         <div class="col-12 col-lg-6"><a href="https://www.mirea.ru/" target="_blank
+          " class="footer-link text-start text-lg-end d-block px-3 px-lg-0"> mirea.ru</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
