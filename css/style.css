@@ -10,7 +10,9 @@ body {
   min-height: 100vh;
 }
 .main-wrapper {
-  min-height: 79vh;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  flex: 1 1 auto;
 }
 @font-face {
   font-family: "PT Sans" 0;
@@ -40,6 +42,22 @@ body {
   --dark-opacity: rgba(27, 27, 27, 0.16);
   --dark-grey: #666666;
 }
+.t-fs-30 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.t-fs-18 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,10 +70,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.main-wrapper {
-  padding-top: 72px;
-  padding-bottom: 72px;
+/* scroll  */
+.container__tab_btn ::-webkit-scrollbar {
+  width: 0px; /* ширина для вертикального скролла */
+  height: 0px; /* высота для горизонтального скролла */
+  background-color: transparent;
 }
+
 a {
   list-style-type: none;
   text-decoration: none;
@@ -65,6 +86,23 @@ input,
   border: 1px solid var(--heading) !important;
   border-radius: 30px !important;
 }
+/* breadcrumb */
+.breadcrumb {
+  padding-top: 30px !important;
+}
+.breadcrumb-item a {
+  text-decoration: none;
+  color: var(--heading);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.breadcrumb-item.active {
+  color: var(--text) !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   padding-right: 0.5rem;
@@ -700,14 +738,37 @@ button.btn-item:active {
   margin-bottom: 40px;
 }
 
+/* -----------Info Page ------------*/
+.info-main-list > li {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.btn-info-tab {
+  background-color: var(--light-grey) !important;
+  border-radius: 30px !important;
+  color: var(--text) !important;
+  font-size: 16px !important;
+  line-height: 22px;
+  padding: 12px 24px;
+  font-weight: 700;
+  width: max-content !important;
+}
+.btn-info-tab.active,
+.btn-info-tab:hover {
+  background-color: var(--heading) !important;
+  color: var(--btn-text) !important;
+  text-decoration: none;
+}
+
 /* -----------Документы и правила посещения ------------*/
 
-.documents li {
+.documents__list li {
   box-shadow: 0px 16px 32px rgba(34, 102, 156, 0.06),
     0px 8px 24px rgba(34, 102, 156, 0.06), 0px 2px 8px rgba(34, 102, 156, 0.06),
     0px 0px 1px rgba(34, 102, 156, 0.06);
   background-color: var(--bg-grey);
-  padding: 20px;
+
+  cursor: pointer;
 }
 .documents__list a {
   font-weight: 700;
@@ -715,8 +776,19 @@ button.btn-item:active {
   line-height: 24px;
   color: var(--text);
   text-decoration: none;
+  display: block;
+  height: 100%;
+  padding: 20px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
 }
-
+.doc-description {
+  flex: 1 1 auto;
+}
+a.doc-description:hover {
+  color: var(--heading);
+}
 /* -----------Парковка ------------*/
 .parking .card {
   background-color: var(--bg-grey);
@@ -734,18 +806,12 @@ button.btn-item:active {
 }
 
 /* -----------Feedback-send ------------*/
-.feedback-page__wrapper {
+.feedback-block__wrapper {
   background-color: var(--bg-grey);
   padding: 30px 5px;
   margin-bottom: 80px;
 }
-.t-fs-30 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
+
 .feedback__form-area {
   padding: 0 20px;
 }
@@ -756,4 +822,60 @@ button.btn-item:active {
 }
 .feddback__person-form {
   padding: 0 20px;
+}
+
+.feedback-block__wrapper .form-check-input:checked[type="radio"] {
+  background-color: var(--heading) !important;
+}
+
+.feedback-block__wrapper .form-check-input:checked {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/*------------ question-block ------------*/
+.blue-point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--heading);
+}
+.question__title,
+.question__body {
+  color: var(--text) !important;
+  background-color: var(--bg-grey) !important;
+}
+.question__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 20px;
+}
+.question__body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.question-block .accordion-button::after {
+  background-image: url(../img/X.svg) !important;
+  width: 20px;
+  height: 20px;
+}
+
+.question-block .accordion-button:not(.collapsed)::after {
+  background-image: url(../img/slash.svg) !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--text) !important;
+}
+
+/*------------ privacy-tab ------------*/
+.container__tab_btn {
+  overflow: hidden;
+}
+.info-main-list {
+  overflow-x: scroll;
+}
+.privacy__list span {
+  color: var(--heading);
 }

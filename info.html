@@ -106,187 +106,293 @@
     </header>
     
 <div class="main-wrapper">
-    <div class="container">
-        <div class="row">
-            <ul class="list-group list-group-horizontal ">
-                <li class="list-group-item active gx-3 border-0" aria-current="true">Документы и правила посещения</li>
-                <li class="list-group-item gx-3 border-0">Парковка</li>
-                <li class="list-group-item">Обратная свзязь</li>
-                <li class="list-group-item">Политика конфиденциальности</li>
-                <li class="list-group-item">Порядок оказания услуг и оплаты</li>
-              </ul>
-        </div>
-
-        <section class="documents">
-          <ul class="list-group documents__list ">
-            <li class="list-group-item  border-0 mb-5" aria-current="true">
-              <a href="" download> <img src="img/download.svg" alt="скачать" class="me-2"></a>
-              <a href="" target="_blank"> Положение об оказании платных физкультурно-оздоровительных и спортивных услуг
-                </a>
+    <div class="container container__tab_btn">
+      
+          <ul class="nav nav-tabs nav-pills nav-fill  flex-nowrap info-main-list border-0" id="myTab" role="tablist">
+            <li class="nav-item me-2" role="presentation">
+              <button class="nav-link btn-info-tab active" id="doc-tab" data-bs-toggle="tab" data-bs-target="#doc" type="button" role="tab" aria-controls="doc" aria-selected="true">Документы и правила посещения</button>
             </li>
-            <li class="list-group-item  border-0 mb-5" aria-current="true">
-              <a href="" download> <img src="img/download.svg" alt="скачать" class="me-2"></a>
-              <a href="" target="_blank">Правила посещения
-                </a>
+            <li class="nav-item mx-2" role="presentation">
+              <button class="nav-link btn-info-tab" id="parkinge-tab" data-bs-toggle="tab" data-bs-target="#parking" type="button" role="tab" aria-controls="parking" aria-selected="false">Парковка</button>
+            </li>
+            <li class="nav-item mx-2" role="presentation">
+              <button class="nav-link  btn-info-tab" id="feedback-block-tab" data-bs-toggle="tab" data-bs-target="#feedback-block" type="button" role="tab" aria-controls="feedback-block" aria-selected="false">Обратная свзязь</button>
+            </li>
+            <li class="nav-item mx-2" role="presentation">
+              <button class="nav-link btn-info-tab" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" aria-controls="privacy" aria-selected="false">Политика конфиденциальности</button>
+            </li>
+            <li class="nav-item ms-2" role="presentation">
+              <button class="nav-link btn-info-tab" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment" type="button" role="tab" aria-controls="payment" aria-selected="false">Порядок оказания услуг и оплаты</button>
             </li>
           </ul>
-        </section>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="doc" role="tabpanel" aria-labelledby="doc-tab">
+              <div class="documents__wrapper">
+                <ul class="list-group documents__list ">
+                  <li class="list-group-item d-flex align-item-center flex-md-nowrap border-0 mb-5" aria-current="true">
+                    <a href="" download>
+                      <img src="img/download.svg" alt="скачать" class="me-2"></a>
+                    <a href="" target="_blank" class="doc-description"> Положение об оказании платных физкультурно-оздоровительных и спортивных услуг 
+                      </a>
+                  </li>
+                  <li class="list-group-item d-flex align-item-center flex-md-nowrap border-0 mb-5" aria-current="true">
+                    <a href="" download>
+                      <img src="img/download.svg" alt="скачать" class="me-2"></a>
+                    <a href="" target="_blank" class="doc-description"> Правила посещения
+                      </a>
+                  </li>
+                </ul>
+              </div>
 
-        <section class="parking">
+            </div>
+            <div class="tab-pane fade" id="parking" role="tabpanel" aria-labelledby="parking-tab">
+              <div class="parking">
            
-            <div class="card">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
-                  на Пр. Вернадского, 78 стр. 5 </h5>
-                <p class="card-text">Метро Юго-Западная</p>
-                <p class="card-text">Парковка на внутренней территории</p>
-                <div>
-                  <p class="card-text mb-1">Как оформить:</p>
-                  <ul>
-                    <li>При оформлении услуги сообщите менеджеру номер и марку автомобиля</li>
-                    <li>В день посещения на КПП пропустят вашу машину</li>
-                  </ul>
+                <div class="card">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
+                      на Пр. Вернадского, 78 стр. 5 </h5>
+                    <p class="card-text">Метро Юго-Западная</p>
+                    <p class="card-text">Парковка на внутренней территории</p>
+                    <div>
+                      <p class="card-text mb-1">Как оформить:</p>
+                      <ul>
+                        <li>При оформлении услуги сообщите менеджеру номер и марку автомобиля</li>
+                        <li>В день посещения на КПП пропустят вашу машину</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p class="card-text mb-1">Как проехать:</p>
+                      <ul>
+                        <li>Въезд на парковку расположен на улице Коштоянца со строны проспекта Вернадского через КПП №1</li>
+                      </ul>
+                    </div>
+                   <div>
+                    <p class="card-text mb-1">Стоимость:</p>
+                    <ul>
+                      <li>Бесплатно</li>
+                    </ul>
+                   </div>
+                    
+                    <a href="https://yandex.ru/maps/-/CCUBRQfIxB" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+                  </div>
                 </div>
-                <div>
-                  <p class="card-text mb-1">Как проехать:</p>
-                  <ul>
-                    <li>Въезд на парковку расположен на улице Коштоянца со строны проспекта Вернадского через КПП №1</li>
-                  </ul>
+                <div class="card">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
+                      на Пр. Вернадского, 86 стр. 9 </h5>
+                    <p class="card-text">Метро Юго-Западная</p>
+                    <p class="card-text">Парковка на внутренней территории</p>
+                    <div>
+                      <p class="card-text mb-1">Как оформить:</p>
+                      <ul>
+                        <li>При оформлении услуги сообщите менеджеру номер и марку автомобиля</li>
+                        <li>В день посещения на КПП пропустят вашу машину</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p class="card-text mb-1">Как проехать:</p>
+                      <ul>
+                        <li>Въезд на парковку расположен в проезде между улицей Рузкая и улицей Академика Анохина через КПП №2 справа от дома по адресу Проспект Вернадского, 86 с. 1</li>
+                      </ul>
+                    </div>
+                   <div>
+                    <p class="card-text mb-1">Стоимость:</p>
+                    <ul>
+                      <li>Бесплатно</li>
+                    </ul>
+                   </div>
+                    
+                    <a href="https://yandex.ru/maps/-/CCUBRQr48A" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+                  </div>
                 </div>
-               <div>
-                <p class="card-text mb-1">Стоимость:</p>
-                <ul>
-                  <li>Бесплатно</li>
-                </ul>
-               </div>
+                <div class="card">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
+                      на Ул. Стромынка, 20 к. 1</h5>
+                    <p class="card-text">Метро Сокольники</p>
+                    <p class="card-text">Городская парковка</p>
+                    <div>
+                      <p class="card-text mb-1">Как проехать:</p>
+                      <ul>
+                        <li>Подъезд к спорткомплексу осуществляется с улицы Матросская Тишина по трамвайным путям. </li>
+                      </ul>
+                    </div>
+                   <div>
+                    <p class="card-text mb-1">Стоимость:</p>
+                    <ul>
+                      <li>0-40 рублей в час</li>
+                    </ul>
+                   </div>
+                    
+                    <a href="https://yandex.ru/maps/-/CCUBRQrlLD" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+                  </div>
+                </div>
                 
-                <a href="#" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="feedback-block" role="tabpanel" aria-labelledby="feedback-block-tab">
+              <div class="feedback-block__wrapper">
+                <div class="feedback__form">
+                  <h5 class="text-center mb-3 t-fs-30">Отправить вопрос или отзыв</h5>
+                  <div class="feedback__form-area mb-3">
+                    <label for="feedbackText" class="form-label mb-1">Название</label>
+                    <textarea class="form-control" id="feedbackText" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="getFeedback">
+                  <label class="form-check-label" for="getFeedback">
+                    Получить обратную связь
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="anonim" checked>
+                  <label class="form-check-label" for="anonim">
+                    Анонимно
+                  </label>
+                </div>
+      
+                <form class="mb-4 feddback__person-form">
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="autoSizingInput">Name</label>
+                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Имя" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="phone-number"  >phone-number</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control item" id="phone-number" placeholder="Телефон" required>
+                  </div>
+                  </div>
+                   <p class="feedback-desc">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в  <span>Политикой конфеденциальности*</span> </p>
+                  
+                </form>
+                <button type="submit" class="btn-item m-auto d-block">Отправить</button>
+              </div>
+      
+              <div class="question-block">
+                <h5 class="text-center mb-5 t-fs-30 ">Часто задаваемые вопросы</h5>
+                <div class="accordion " id="accordionExample">
+                  <div class="accordion-item border-0 my-4 ">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button question__title collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <span class="blue-point me-3"></span>
+                        Можно ли курить на территории спорткомплекса?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse question__body collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                         Нет, курение в помещениях на территории спорткомплека запрещено.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="accordion-item border-0 my-4 ">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button question__title collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <span class="blue-point me-3"></span>
+                        Можно ли курить на территории спорткомплекса?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse question__body collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                         Нет, курение в помещениях на территории спорткомплека запрещено.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+              <div class="privacy__wrapper">
+                <h5 class="t-fs-30 mb-5 ">Политика в отношении обработки персональных данных</h5>
+                <ol class="privacy__list">
+                  <li class="t-fs-18  mb-3">
+                      Субъект разрешает федеральному государственному бюджетному образовательному учреждению высшего образования «Московский технологический университет», юридический адрес: 119454, Москва, проспект Вернадского, 78 (далее — Университет), обработку персональных данных, указанных в пункте 5, на нижеследующих условиях.
+                </li>
+                  <li class="t-fs-18  mb-3">
+                      Субъект даёт согласие на использование в качестве каналов передачи информации, 
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                      Субъект даёт согласие на обработку Университетом своих персональных данных, то есть совершение, в том числе, следующих действий: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе трансграничную передачу), обезличивание, блокирование, уничтожение персональных данных в соответствии с <span class=""> Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных»</span>  и <span>Политикой обработки персональных данных в МИРЭА</span>, а также право на представление различных форм отчетности, передачу такой информации и результатов её рассмотрения в вышестоящие, контролирующие органы и третьим лицам, для обеспечения, мониторинга учебного процесса, научной, организационной, профориентационной, финансово-экономической и иной деятельности Университета в том числе, и в случаях, установленных нормативными правовыми актами Российской Федерации. 
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                    Университет обязуется использовать данные Субъекта для обеспечения и мониторинга организационной, научной, профориентационной, финансово-экономической и иной деятельности Университета, в том числе учебного процесса в соответствии с действующим законодательством Российской Федерации. Университет может раскрыть правоохранительным органам любую информацию по официальному запросу только в случаях, установленных законодательством Российской Федерации.
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                      Перечень персональных данных, передаваемых Университету на обработку: 
+                    <ul class="my-2">
+                      <li class="t-fs-18  mb-2">фамилия, имя, отчество;</li>
+                      <li class="t-fs-18  mb-2">контактная информация;</li>
+                      <li class="t-fs-18  mb-2">текст обращения; </li>
+                      <li class="t-fs-18  mb-2">результаты рассмотрения обращения.</li>
+                    </ul>
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                    Субъект даёт согласие на включение в общедоступные источники персональных данных для обеспечения и мониторинга образовательного процесса, научной, организационной, профориентационной и финансово-экономической деятельности Университета, следующих персональных данных:
+                    <ul class="my-2" >
+                      <li class="t-fs-18  mb-2">фамилия, имя, отчество;</li>
+                      <li class="t-fs-18  mb-2">контактная информация;</li>
+                      <li class="t-fs-18  mb-2">текст обращения; </li>
+                      <li class="t-fs-18  mb-2">результаты рассмотрения обращения.</li>
+                    </ul>
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                    Субъект по письменному запросу имеет право на получение информации, касающейся обработки его персональных данных.
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                    Обработка персональных данных, не включенных в общедоступные источники, прекращается по истечении пяти лет с наступления предполагаемого года обучения, и данные удаляются (уничтожаются) из информационных систем Университета после указанного срока.
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                    При поступлении в Университет письменного заявления Субъекта о прекращении действия настоящего Согласия персональные данные деперсонализируются в 15-дневый срок (кроме сведений, хранение которых обусловлено требованиями законодательства РФ).
+                  </li>
+                  <li class="t-fs-18  mb-3">
+                     Настоящее согласие действует в течение срока обработки персональных данных Субъекта.
+                  </li>
+                </ol>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
-                  на Пр. Вернадского, 86 стр. 9 </h5>
-                <p class="card-text">Метро Юго-Западная</p>
-                <p class="card-text">Парковка на внутренней территории</p>
-                <div>
-                  <p class="card-text mb-1">Как оформить:</p>
+
+            <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+              <div class="payment__wrapper">
+                <div class="payment__procedure mb-3 mb-lg-5">
+                  <h5 class="t-fs-30 mb-5 ">Порядок оказания услуг и оплаты</h5>
                   <ul>
-                    <li>При оформлении услуги сообщите менеджеру номер и марку автомобиля</li>
-                    <li>В день посещения на КПП пропустят вашу машину</li>
+                    <li class="t-fs-18 mb-3">Оставьте заявку через сайт или свяжитесь по указанному номеру телефона с администратором одного из спорткомплексов </li>
+                    <li class="t-fs-18  mb-3">Ознакомьтесь с условиями договора и оставьте свою подпись</li>
+                    <li class="t-fs-18  mb-3">Оплатите выбранную спортивную услугу удобным способом</li>
+                    <li class="t-fs-18  mb-3">Предоставьте администратору выбранного спорткомплекса подтверждение об оплате в удобной форме: электронной или бумажной </li>
+                    <li class="t-fs-18 mb-3 ">Администратор спорткомплекса подготовит всё необходимое для вашего комфортного пребывания</li>
                   </ul>
                 </div>
-                <div>
-                  <p class="card-text mb-1">Как проехать:</p>
+                <div class="payment__detail pt-3 pt-lg-5 mb-3">
+                  <h5 class="t-fs-30 mb-5 ">Реквизиты для оплаты</h5>
                   <ul>
-                    <li>Въезд на парковку расположен в проезде между улицей Рузкая и улицей Академика Анохина через КПП №2 справа от дома по адресу Проспект Вернадского, 86 с. 1</li>
+                    <li class="t-fs-18 mb-3">Исполнитель: РТУ МИРЭА</li>
+                    <li class="t-fs-18  mb-3">Юридический адрес: 119454 г. Москва, пр-кт Вернадского, д. 78</li>
+                    <li class="t-fs-18  mb-3">Телефон: +7 (499) 215-65-65</li>
+                    <li class="t-fs-18  mb-3">ИНН: 7729040491</li>
+                    <li class="t-fs-18  mb-3">КПП: 772901001</li>
+                    <li class="t-fs-18  mb-3">УФК по г. Москве (РТУ МИРЭА л/с 20736Х43540)</li>
+                    <li class="t-fs-18  mb-3">Банк: ГУ БАНКА РОССИИ ПО ЦФО//УФК ПО Г. МОСКВЕ г. Москва</li>
+                    <li class="t-fs-18  mb-3">БИК ТОФК: 004525988</li>
+                    <li class="t-fs-18  mb-3">Казначейский счёт 03214643000000017300</li>
+                    <li class="t-fs-18  mb-3">Единый казначейский счёт: 40102810545370000003</li>
+                    <li class="t-fs-18  mb-3">КБК: 000 000 000 000 000 00 130</li>
+                    <li class="t-fs-18  mb-3">ОКПО: 02068717</li>
+                    <li class="t-fs-18  mb-3"> ОКТМО: 45327000</li>
                   </ul>
                 </div>
-               <div>
-                <p class="card-text mb-1">Стоимость:</p>
-                <ul>
-                  <li>Бесплатно</li>
-                </ul>
-               </div>
-                
-                <a href="#" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body p-0">
-                <h5 class="card-title fw-bold mx-auto text-center">Спорткомплекс <br>
-                  на Ул. Стромынка, 20 к. 1</h5>
-                <p class="card-text">Метро Сокольники</p>
-                <p class="card-text">Городская парковка</p>
-                <div>
-                  <p class="card-text mb-1">Как проехать:</p>
-                  <ul>
-                    <li>Подъезд к спорткомплексу осуществляется с улицы Матросская Тишина по трамвайным путям. </li>
-                  </ul>
-                </div>
-               <div>
-                <p class="card-text mb-1">Стоимость:</p>
-                <ul>
-                  <li>0-40 рублей в час</li>
-                </ul>
-               </div>
-                
-                <a href="#" class="btn-item m-auto d-block">Открыть в Яндекс.Картах</a>
-              </div>
-            </div>
-            
-        </section>
 
-        <section class="feedback-page">
-        <div class="feedback-page__wrapper">
-          <div class="feedback__form">
-            <h5 class="text-center mb-3 t-fs-30">Отправить вопрос или отзыв</h5>
-            <div class="feedback__form-area mb-3">
-              <label for="feedbackText" class="form-label mb-1">Название</label>
-              <textarea class="form-control" id="feedbackText" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="getFeedback">
-            <label class="form-check-label" for="getFeedback">
-              Получить обратную связь
-            </label>
-          </div>
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="anonim" checked>
-            <label class="form-check-label" for="anonim">
-              Анонимно
-            </label>
-          </div>
-
-          <form class="mb-4 feddback__person-form">
-            <div class="mb-3">
-              <label class="visually-hidden" for="autoSizingInput">Name</label>
-              <input type="text" class="form-control" id="autoSizingInput" placeholder="Имя" required>
-            </div>
-            <div class="mb-3">
-              <label class="visually-hidden" for="phone-number"  >phone-number</label>
-              <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Телефон" required>
-            </div>
-            </div>
-             <p class="feedback-desc">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в  <span>Политикой конфеденциальности*</span> </p>
-            
-          </form>
-          <button type="submit" class="btn-item m-auto d-block">Отправить</button>
-        </div>
-
-        <div class="question-block">
-          <h5 class="text-center mb-3 t-fs-30">Часто задаваемые вопросы</h5>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item my-5">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Можно ли курить на территории спорткомплекса?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                   Нет, курение в помещениях на территории спорткомплека запрещено.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item my-4">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Можно ли курить на территории спорткомплекса?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Нет, курение в помещениях на территории спорткомплека запрещено.
-                </div>
               </div>
             </div>
           </div>
-        </div>
-        </section>
-        
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Библиотека</li>
+            </ol>
+          </nav>
     </div>
 </div>
 
