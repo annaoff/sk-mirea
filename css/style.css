@@ -876,6 +876,12 @@ a.doc-description:hover {
 .info-main-list {
   overflow-x: scroll;
 }
-.privacy__list span {
+.blue-link {
   color: var(--heading);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.blue-link:hover {
+  color: var(--heading);
+  text-decoration: underline;
 }
