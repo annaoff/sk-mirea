@@ -1,0 +1,360 @@
+<div class="booking__wrapper booking__desctop d-none d-xl-block">
+  <div class="row">
+    <div class="col col-xl-6 px-0">
+      <div class="booking__indicator action-process ms-auto left-block">
+        <span>1</span>
+      </div>
+    </div>
+    <div class="col col-xl-6 ms-auto px-0">
+      <div class="booking__indicator right-block disabled-color me-auto">
+        <span>2 </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-xl-6 block-calendar pe-xl-5">
+      <div class="calendar" id="calendar"></div>
+      <div class="booking-field text-center">
+        <div class="form-check form-check-inline text-dark-label me-5">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+            checked
+          />
+          <label class="form-check-label" for="inlineRadio1">1 поле</label>
+        </div>
+        <div class="form-check form-check-inline text-dark-label me-5">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2">2 поля</label>
+        </div>
+        <div class="form-check form-check-inline text-dark-label me-5">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio3"
+            value="option3"
+          />
+          <label class="form-check-label" for="inlineRadio3">3 поля </label>
+        </div>
+        <div class="form-check form-check-inline text-dark-label me-0">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio4"
+            value="option4"
+          />
+          <label class="form-check-label" for="inlineRadio4">4 поля </label>
+        </div>
+      </div>
+
+      <div
+        class="booking-hours d-flex flex-wrap justify-content-xl-between my-4"
+      >
+        <button class="btn-grey-link btn-hours me-2">8:00</button>
+        <button class="btn-grey-link btn-hours me-2">9:00</button>
+        <button class="btn-grey-link btn-hours active me-2">18:00</button>
+        <button class="btn-grey-link btn-hours me-2">19:00</button>
+        <button class="btn-grey-link btn-hours me-2">20:00</button>
+        <button class="btn-grey-link btn-hours me-2">21:00</button>
+        <button class="btn-grey-link btn-hours">22:00</button>
+      </div>
+
+      <div class="booking-contacts">
+        <form class="mb-4">
+          <div class="mb-3">
+            <label class="visually-hidden" for="autoSizingInput-b">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="autoSizingInput-b"
+              placeholder="Имя"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="visually-hidden" for="phone-number-b"
+              >phone-number</label
+            >
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control item"
+                id="phone-number-b"
+                placeholder="Телефон"
+                required
+              />
+            </div>
+          </div>
+          <p class="feedback-desc">
+            Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
+            персональных данных, в соответствии с
+            <a target="_blank" href="https://priem.mirea.ru/docs/pd_policy.pdf"
+              >Политикой конфеденциальности*</a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="booking-send">
+        <h5 class="t-fs-30 text-center">
+          Заявка на бронирование <br />
+          успешно отправлена!
+        </h5>
+        <p class="text-center">
+          В ближайшее время с вами свяжется <br />
+          администратор и подтвердит бронитрование.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 col-xl-6 booking-info-group ps-xl-4">
+      <ul class="list-group p-0">
+        <li class="list-group-item">
+          <div
+            class="booking-list__wrapper d-flex justify-content-between align-items-center"
+          >
+            <div class="booking-info-desc">
+              <span> 6 сентября </span> <span>20:00-21:00</span> &nbsp;/ &nbsp;
+              <span>1 поле </span> &nbsp;/ &nbsp; <span>1000 рублей</span>
+            </div>
+            <div class="action-btn d-flex flex-nowrap">
+              <button
+                class="btn-grey-link btn-hours"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#repeat"
+                aria-expanded="false"
+                aria-controls="repeat"
+              >
+                Повторять
+              </button>
+              <button class="create-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.99878 17.25V21H6.74878L17.8088 9.94L14.0588 6.19L2.99878 17.25ZM5.91878 19H4.99878V18.08L14.0588 9.02L14.9788 9.94L5.91878 19ZM20.7088 5.63L18.3688 3.29C18.1688 3.09 17.9188 3 17.6588 3C17.3988 3 17.1488 3.1 16.9588 3.29L15.1288 5.12L18.8788 8.87L20.7088 7.04C21.0988 6.65 21.0988 6.02 20.7088 5.63Z"
+                  />
+                </svg>
+              </button>
+              <button class="delete-icon">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="collapse repeat-block" id="repeat">
+            <div class="card card-body border-0 px-0">
+              <div class="row align-items-end">
+                <div class="col-5">
+                  <label for="#frequency">Как часто повторять</label>
+                  <select
+                    class="form-select"
+                    id="frequency"
+                    aria-label=" как часто повторять"
+                  >
+                    <option selected>Раз в неделю</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-5">
+                  <label for="#end-data">Конечная дата</label>
+                  <select
+                    class="form-select"
+                    id="end-data"
+                    aria-label="Конечная дата"
+                  >
+                    <option selected>24 сентября 2021</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-2 text-end">
+                  <div class="arrow-right-icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div
+            iv
+            class="booking-list__wrapper d-flex justify-content-between align-items-center"
+          >
+            <div class="booking-info-desc">
+              <span> 6 сентября </span> <span>20:00-21:00</span> &nbsp;/ &nbsp;
+              <span>1 поле </span> &nbsp;/ &nbsp; <span>1000 рублей</span>
+            </div>
+            <div class="action-btn d-flex flex-nowrap">
+              <button
+                class="btn-grey-link btn-hours"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#repeat2"
+                aria-expanded="false"
+                aria-controls="repeat2"
+              >
+                Повторять
+              </button>
+              <button class="create-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.99878 17.25V21H6.74878L17.8088 9.94L14.0588 6.19L2.99878 17.25ZM5.91878 19H4.99878V18.08L14.0588 9.02L14.9788 9.94L5.91878 19ZM20.7088 5.63L18.3688 3.29C18.1688 3.09 17.9188 3 17.6588 3C17.3988 3 17.1488 3.1 16.9588 3.29L15.1288 5.12L18.8788 8.87L20.7088 7.04C21.0988 6.65 21.0988 6.02 20.7088 5.63Z"
+                  />
+                </svg>
+              </button>
+              <button class="delete-icon">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="collapse repeat-block" id="repeat2">
+            <div class="card card-body border-0 px-0">
+              <div class="row align-items-end">
+                <div class="col-5">
+                  <label for="#frequency2">Как часто повторять</label>
+                  <select
+                    class="form-select"
+                    id="frequency2"
+                    aria-label=" как часто повторять"
+                  >
+                    <option selected>Раз в неделю</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-5">
+                  <label for="#end-data2">Конечная дата</label>
+                  <select
+                    class="form-select"
+                    id="end-data2"
+                    aria-label="Конечная дата"
+                  >
+                    <option selected>24 сентября 2021</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-2 text-end">
+                  <div class="arrow-right-icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div
+            class="booking-list__wrapper d-flex justify-content-between align-items-center"
+          >
+            <div class="booking-info-desc">
+              <span> 6 сентября </span> <span>20:00-21:00</span> &nbsp;/ &nbsp;
+              <span>1 поле </span> &nbsp;/ &nbsp; <span>1000 рублей</span>
+            </div>
+            <div class="action-btn d-flex flex-nowrap">
+              <button
+                class="btn-grey-link btn-hours"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#repeat3"
+                aria-expanded="false"
+                aria-controls="repeat3"
+              >
+                Повторять
+              </button>
+              <button class="create-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.99878 17.25V21H6.74878L17.8088 9.94L14.0588 6.19L2.99878 17.25ZM5.91878 19H4.99878V18.08L14.0588 9.02L14.9788 9.94L5.91878 19ZM20.7088 5.63L18.3688 3.29C18.1688 3.09 17.9188 3 17.6588 3C17.3988 3 17.1488 3.1 16.9588 3.29L15.1288 5.12L18.8788 8.87L20.7088 7.04C21.0988 6.65 21.0988 6.02 20.7088 5.63Z"
+                  />
+                </svg>
+              </button>
+              <button class="delete-icon">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="collapse repeat-block" id="repeat3">
+            <div class="card card-body border-0 px-0">
+              <div class="row align-items-end">
+                <div class="col-5">
+                  <label for="#frequency3">Как часто повторять</label>
+                  <select
+                    class="form-select"
+                    id="frequency3"
+                    aria-label=" как часто повторять"
+                  >
+                    <option selected>Раз в неделю</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-5">
+                  <label for="#end-data3">Конечная дата</label>
+                  <select
+                    class="form-select"
+                    id="end-data3"
+                    aria-label="Конечная дата"
+                  >
+                    <option selected>24 сентября 2021</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-2 text-end">
+                  <div class="arrow-right-icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div
+        class="booking__cost d-flex px-3 my-2 align-items-center justify-content-between mb-5"
+      >
+        <p class="mb-0 cost-text fw-bold">
+          Итого: &nbsp; <span>4000 &nbsp;рублей</span>
+        </p>
+        <button class="btn-grey-link btn-hours">Добавить дату</button>
+      </div>
+      <div class="text-center m-auto d-flex align-items-center">
+        <a href="" class="link-back">Назад</a>
+        <button class="btn-item m-auto">Далее</button>
+      </div>
+    </div>
+  </div>
+</div>
