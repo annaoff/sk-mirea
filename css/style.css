@@ -866,6 +866,23 @@ a.doc-description:hover {
   border-radius: 50%;
   background-color: var(--heading);
 }
+.question-items {
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.question-items::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--heading);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
 .question__title,
 .question__body {
   color: var(--text) !important;
@@ -1206,4 +1223,13 @@ a.main-style:hover {
   min-height: 440px;
   /* height: 450px; */
   max-height: max-content;
+}
+.table-call-style {
+  min-width: 500px;
+}
+.table-app-style {
+  min-width: 700px;
+}
+.table-app-style tbody tr {
+  color: var(--heading) !important;
 }
